@@ -1,4 +1,16 @@
-<h1> Hello World </h1>
+<!DOCTYPE html>
+<html>
+<body> 
+
+<style>
+#centerGreen, #text, #butdiv{
+    text-align: center;
+    color: green;
+}
+</style>
+
+
+<p id="centerGreen">Hello World!</p>
 
 <ul> This is a test so I can learn how to use Github </ul>
 
@@ -20,23 +32,26 @@
   </tr>
 </table>
  
-<script type="text/javascript">
 
-    function toggle() {
-        if (document.getElementById('toggle').value == 'Hello') {
-            document.getElementById('toggle').value = 'Goodbye';
-        }
-        else {
-            document.getElementById('toggle').value = 'Hello';
-        }
+<p id="text">This Text Will Toggle Back And Fourth</p>
 
-    }
+<div id = "butdiv">
+<button type="button" onclick="test()"> Click Me!</button>
+</div>
+
+<script>
+function test() {
+
+if(document.getElementById('text').innerHTML == 'Hello JavaScript'){
+     document.getElementById('text').innerHTML = 'Bye JavaScript'
+}
+else 
+{
+     document.getElementById('text').innerHTML = 'Hello JavaScript'
+}
+
+}
 </script>
- 
-
-<body> 
-
-<br />
-<input type="button" onclick="toggle()" value="Hello" id="toggle" />
 
 </body>
+</html>
