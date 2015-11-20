@@ -20,17 +20,23 @@
   </tr>
 </table>
  
-<script>
-function changeText() {
-    document.getElementById("demo").innerHTML = "this is the new text";
-}
+<script type="text/javascript">
+
+    function toggle() {
+        if (document.getElementById('toggle').value == 'Hello') {
+            document.getElementById('toggle').value = 'Goodbye';
+        }
+        else {
+            document.getElementById('toggle').value = 'Hello';
+        }
+
+    }
 </script>
  
 
 <body> 
 
-<p id="demo">this text will be changed</p>
-
-<button type="button" onclick="changeText()">Try it</button>
+<br />
+<input type="button" onclick="toggle()" value="Hello" id="toggle" />
 
 </body>
